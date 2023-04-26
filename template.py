@@ -4,9 +4,9 @@ import logging as lg
 
 lg.basicConfig(level=lg.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = "signLanguage"
+project_name= "signLanguage"
 
-list_of_files = [
+list_of_files= [
     ".github/workflows/.gitkeep",
     "data/.gitkeep",
     "docs/.gitkeep",
@@ -27,7 +27,7 @@ list_of_files = [
 
     f"{project_name}/entity/__init__.py",
     f"{project_name}/entity/artifacts_entity.py",
-    f"{project_name}/entity/config_enity.py",
+    f"{project_name}/entity/config_entity.py",
 
     f"{project_name}/exception/__init__.py",
     f"{project_name}/logger/__init__.py",
@@ -47,9 +47,9 @@ list_of_files = [
 ]
 
 for filepath in list_of_files:
-    filepath = Path(filepath)
+    filepath= Path(filepath)
 
-    filedir, filename = os.path.split(filepath)
+    filedir, filename= os.path.split(filepath)
 
     if filedir !="":
         os.makedirs(filedir, exist_ok= True)

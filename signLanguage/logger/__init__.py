@@ -12,8 +12,4 @@ os.makedirs(log_path, exist_ok=True)
 
 LOG_FILE_PATH= os.path.join(log_path, LOG_FILE)
 
-lg.basicConfig(
-    filename= LOG_FILE_PATH,
-    format= "[ %(asctime)s ] %(name)s - %(levelname)s - %(message)s",
-    level= lg.INFO
-)
+lg.basicConfig(filename= LOG_FILE_PATH, format= "[ %(asctime)s ] %(name)s - %(levelname)s - %(message)s", level= lg.INFO)
